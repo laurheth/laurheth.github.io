@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Lauren Hetherington</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
     <div id="container">
         <header>
-            <div id="portrait"><img src="http://placekitten.com/200/300" /></div>
+            <!--<div id="portrait"><img src="http://placekitten.com/200/300" /></div>-->
             <div id="title">
                 <h1>Lauren Hetherington</h1>
                 <p>Junior developer with a passion for adventure</p>
@@ -18,32 +19,46 @@
         </header>
         <section>
             <h2>About Me</h2>
+            <div class="row">
+                <div class="imagecolumn">
+                    <img src="http://placekitten.com/200/200" />
+                </div>
+                <div class="textcolumn">
+                    <p>Short description of the sort of work like to do and am good at.
+                        Some flavour text about hobbies, if appropriate.
+                    </p>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Projects</h2>
             <div class="project">
                 <h3>Goblin Friends 3D</h3>
-                <div class="projectabout">
-                    <p><a href="#">GitHub</a></p>
-                    <p>A game about goblins in a deep and dark dungeon discovering
-                    the meaning of friendship. Written in C#, using Unity3D.</p>
-                </div>
-                <div class="screenshot">
-                    <img src="http://placekitten.com/100/100" />
+                <div class="row">
+                    <div class="textcolumn">
+                        <p class="links"><a href="#">GitHub</a></p>
+                        <p>A game about goblins in a deep and dark dungeon discovering
+                            the meaning of friendship. Written in C#, using Unity3D.</p>
+                    </div>
+                    <div class="imagecolumn">
+                        <img src="http://placekitten.com/200/150" />
+                    </div>
                 </div>
             </div>
             <div class="project">
                 <h3>Zoe Kabloe and the Quest for Brunch</h3>
-                <div class="projectabout">
-                    <p><a href="#">itch.io</a> - <a href="#">GitHub</a></p>
-                    <p>
-                        Made in two weeks for the Queerly Representing the Underrepresented game jam.
-                        It is a 3D puzzle platformer about saving your friends, combatting
-                        gentrification, and having a nice brunch. C#, Unity3D.
-                    </p>
-                </div>
-                <div class="screenshot">
-                        <img src="http://placekitten.com/100/100" />
+                <div class="row">
+                    <div class="textcolumn">
+                        <p class="links"><a href="#">itch.io</a> - <a href="#">GitHub</a></p>
+                        <p>
+                            Made in two weeks for the Queerly Representing the Underrepresented game jam.
+                            It is a 3D puzzle platformer about saving your friends, combatting
+                            gentrification, and having a nice brunch. C#, Unity3D.
+                        </p>
+                    </div>
+                    <div class="imagecolumn">
+                        <img src="http://placekitten.com/200/150" />
+                    </div>
                 </div>
             </div>
         </section>

@@ -2,23 +2,113 @@
     All styles are currently placeholders.
 */
 
+/** {
+    text-align: left;
+}*/
+
+a {
+    font-weight: bold;
+}
+
+a:link {
+    color: snow;
+}
+
+a:visited {
+    color: gainsboro;
+}
+
+a:active {
+    color: greenyellow;
+}
+
+p {
+    text-align: left;
+}
+
+h1 {
+    font-size:3.5em;
+}
+
+img {
+    border-radius: 5%;
+}
+
 body {
-    background-color: midnightblue;
+    background-color: #0d001a;
 }
 
 #container {
-    background-color: snow;
+    text-align: center;
+    width:80%;
+    margin:auto;
+    background-color: #1a0033;
 }
 
 header {
-    background-color: turquoise;
+    /*margin:2em auto 1em;*/
+    text-align: center;
+    padding:1em;
+    vertical-align: center;
+    /*display: inline-block;*/
+    color: snow;
+    background-color: #330066;
+}
+#portrait {
+    display: inline-block;
+}
+#title {
+    display: inline-block;
+    align-content: center;
+}
+
+#title > p {
+    display:inline;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 section {
-    background-color: purple;
+    margin: 1em auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    padding: 1em;
+    color: snow;
+    background-color: #330066;
+    width: 90%;
+    border-radius: 1em;
 }
 
 .project {
-    background-color: blue;
+    background-color: #5900b3;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    border-radius: 1em;
+}
+
+/*.links {
+    display: inline-block;
+    margin: auto;
+}*/
+
+.row {
+    display:flex;
+    background-color: #400080;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.textcolumn {
+    margin: 0 auto;
+    padding: 0.5em;
+    /*background-color: green;*/
+    /*flex:75%;*/
+}
+
+.imagecolumn {
+    margin-left: auto;
+    padding: 0em;
+    /*background-color: yellow;*/
+    /*flex:20%;*/
 }
 
