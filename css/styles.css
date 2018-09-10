@@ -35,7 +35,7 @@ img {
 }
 
 body {
-    background-color: #0d001a;
+    background-color: #0d0d0d;
 }
 
 #container {
@@ -54,8 +54,8 @@ header {
     padding:1em;
     vertical-align: center;
     /*display: inline-block;*/
-    color: snow;
-    background-color: #330066;
+    /*color: snow;*/
+    background-color: #666699;
     /*border-radius: 0 0 2em 2em;*/
 }
 #portrait {
@@ -81,18 +81,19 @@ section {
     /*margin-left: auto;
     margin-right: auto;*/
     padding: auto;
-    color: snow;
-    background-color: #330066;
+    /*color: snow;*/
+    background-color: #666699;
     width: 90%;
     border-radius: 1em;
     overflow: auto;
 }
 
 .project {
-    background-color: #5900b3;
-    padding: 0.5em;
-    margin: 0.5em auto;
+    background-color:  #3d3d5c;
+    /*padding: 0.5em 0;*/
+    margin: 0.5em;
     border-radius: 1em;
+    overflow: auto;
 }
 
 /*.links {
@@ -102,7 +103,7 @@ section {
 
 .row {
     display:flex;
-    background-color: #400080;
+    background-color: #52527a;
     border-radius: 1em;
     padding: 0.5em;
 }
