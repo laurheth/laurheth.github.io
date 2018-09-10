@@ -2,9 +2,9 @@
     All styles are currently placeholders.
 */
 
-/** {
-    text-align: left;
-}*/
+* {
+    color: snow;
+}
 
 a {
     font-weight: bold;
@@ -40,19 +40,23 @@ body {
 
 #container {
     text-align: center;
-    width:80%;
-    margin:auto;
-    background-color: #1a0033;
+    padding: 0;
+    width:90%;
+    margin:0 auto;
+    /*background-color: #1a0033;*/
+    vertical-align: top;
 }
 
 header {
     /*margin:2em auto 1em;*/
+    margin: 0;
     text-align: center;
     padding:1em;
     vertical-align: center;
     /*display: inline-block;*/
     color: snow;
     background-color: #330066;
+    /*border-radius: 0 0 2em 2em;*/
 }
 #portrait {
     display: inline-block;
@@ -68,15 +72,20 @@ header {
     font-size: 1em;
 }
 
+footer > p {
+    text-align: center;
+}
+
 section {
     margin: 1em auto;
     /*margin-left: auto;
     margin-right: auto;*/
-    padding: 1em;
+    padding: auto;
     color: snow;
     background-color: #330066;
     width: 90%;
     border-radius: 1em;
+    overflow: auto;
 }
 
 .project {
