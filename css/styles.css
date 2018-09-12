@@ -35,7 +35,7 @@ img {
 }
 
 body {
-    background-color: #0d0d0d;
+    background-color: #000d1a;
 }
 
 #container {
@@ -55,7 +55,7 @@ header {
     vertical-align: center;
     /*display: inline-block;*/
     /*color: snow;*/
-    background-color: #666699;
+    background-color:  #3399ff;
     /*border-radius: 0 0 2em 2em;*/
 }
 #portrait {
@@ -82,14 +82,14 @@ section {
     margin-right: auto;*/
     padding: auto;
     /*color: snow;*/
-    background-color: #666699;
-    width: 90%;
+    background-color:  #3399ff;
+    /*width: 90%;*/
     border-radius: 1em;
     overflow: auto;
 }
 
 .project {
-    background-color:  #3d3d5c;
+    background-color:  #0080ff;
     /*padding: 0.5em 0;*/
     margin: 0.5em;
     border-radius: 1em;
@@ -103,7 +103,7 @@ section {
 
 .row {
     display:flex;
-    background-color: #52527a;
+    background-color: #004080;
     border-radius: 1em;
     padding: 0.5em;
 }
