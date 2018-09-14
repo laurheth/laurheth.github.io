@@ -36,6 +36,7 @@ img {
 
 body {
     background-color: #000d1a;
+    background: url(../img/bg2.jpg) repeat center top;
 }
 
 #container {
@@ -63,7 +64,6 @@ header {
 }
 #title {
     display: inline-block;
-    align-content: center;
 }
 
 #title > p {
