@@ -3,7 +3,7 @@
 */
 
 * {
-    color: snow;
+    color: #161416;
 }
 
 a {
@@ -11,23 +11,30 @@ a {
 }
 
 a:link {
-    color: snow;
+    color: #161416;
 }
 
 a:visited {
-    color: gainsboro;
+    color: #161416;
 }
 
 a:active {
-    color: greenyellow;
+    color: #3d003d;
 }
 
 p {
     text-align: left;
+    font-size: 1.1em;
 }
 
 h1 {
-    font-size:3.5em;
+    font-size:3em;
+    margin: 0.5em;
+    color: snow;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 img {
@@ -37,26 +44,29 @@ img {
 body {
     background-color: #000d1a;
     background: url(../img/bg2.jpg) repeat center top;
+    background-size: contain;
 }
 
 #container {
     text-align: center;
     padding: 0;
-    width:90%;
+    width:900px;
     margin:0 auto;
     /*background-color: #1a0033;*/
     vertical-align: top;
 }
 
-header {
+header, footer {
     /*margin:2em auto 1em;*/
+    display: block;
     margin: 0;
     text-align: center;
-    padding:1em;
+    /*padding:1em;*/
     vertical-align: center;
     /*display: inline-block;*/
     /*color: snow;*/
-    background-color:  #3399ff;
+    background-color:  #1e181f;
+    color: snow;
     /*border-radius: 0 0 2em 2em;*/
 }
 #portrait {
@@ -70,26 +80,40 @@ header {
     display:inline;
     font-weight: bold;
     font-size: 1em;
+
+}
+
+#selfPhoto {
+    /*margin-top: 1em;*/
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#description {
+    text-align: center;
 }
 
 footer > p {
+    display: inline-block;
     text-align: center;
+    color: snow;
 }
 
 section {
     margin: 1em auto;
     /*margin-left: auto;
     margin-right: auto;*/
-    padding: auto;
+    padding: 1em 1em;
     /*color: snow;*/
-    background-color:  #3399ff;
+    background-color:  #fefeffec;
     /*width: 90%;*/
     border-radius: 1em;
     overflow: auto;
 }
 
 .project {
-    background-color:  #0080ff;
+    /*background-color:  #0080ff-->;*/
     /*padding: 0.5em 0;*/
     margin: 0.5em;
     border-radius: 1em;
@@ -103,7 +127,7 @@ section {
 
 .row {
     display:flex;
-    background-color: #004080;
+    /*background-color: #004080;*/
     border-radius: 1em;
     padding: 0.5em;
 }
