@@ -37,6 +37,10 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-size: 1.3em;
+}
+
 img {
     border-radius: 5%;
 }
@@ -115,15 +119,17 @@ section {
 .project {
     /*background-color:  #0080ff-->;*/
     /*padding: 0.5em 0;*/
+    /*align-content: center;*/
     margin: 0.5em;
     border-radius: 1em;
     overflow: auto;
 }
 
-/*.links {
+.links {
+    align-content: center;
     display: inline-block;
     margin: auto;
-}*/
+}
 
 .row {
     display:flex;
@@ -146,3 +152,15 @@ section {
     /*flex:20%;*/
 }
 
+.screenshots {
+    align-content: center;
+    padding: 0em;
+    display:flex;
+}
+
+.screenshots > img {
+    width: 33%;
+    height: 100%;
+    margin: 1em auto;
+    object-fit: contain;
+}
