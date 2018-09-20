@@ -46,12 +46,17 @@ img {
 }
 
 body {
-    background-color: #000d1a;
-    background: url(../img/bg2.jpg) repeat center top;
-    background-size: contain;
+    background-color:  #1e181f;
 }
 
 #container {
+    background-color: #000d1a;
+    background: url(../img/bg2.jpg) repeat center top;
+    background-size: contain;
+    overflow: auto;
+}
+
+#content {
     text-align: center;
     padding: 0;
     width:900px;
@@ -69,7 +74,6 @@ header, footer {
     vertical-align: center;
     /*display: inline-block;*/
     /*color: snow;*/
-    background-color:  #1e181f;
     color: snow;
     /*border-radius: 0 0 2em 2em;*/
 }
