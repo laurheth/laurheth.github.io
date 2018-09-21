@@ -4,6 +4,7 @@
 
 * {
     color: #161416;
+    box-sizing: border-box;
 }
 
 a {
@@ -167,4 +168,39 @@ section {
     height: 100%;
     margin: 1em auto;
     object-fit: contain;
+}
+
+#contactform {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+}
+
+#form_name, #form_email, #form_message, #form_submit {
+    padding:0.8em;
+    margin:0.8em;
+    border: 2px;
+    border-style: solid;
+    border-radius: 0.4em;
+}
+
+#form_name, #form_email {
+    flex-grow: 1;
+}
+
+#form_submit {
+    align-self: center;
+}
+
+#form_message {
+    width:100%;
+    resize: none;
 }
