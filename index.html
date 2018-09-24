@@ -7,6 +7,8 @@
     <title>Lauren Hetherington</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 
 <body>
@@ -18,79 +20,108 @@
         </div>
     </header>
     <div id="container">
-    <div id="content">
-        <section>
-            <img id="selfPhoto" src="img/fishphoto.jpeg" />
-            <h2>Hi, I'm Lauren!</h2>
-            <p id="description">
-                I'm a junior developer with an interest in game and web development.
-                I'm a former researcher with a love of Astrophysics, but my true passion
-                is coding solutions to new problems, and creating interesting or fun
-                experiences.
-            </p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Goblin Friends 3D</h3>
-                <p class="links"><a href="https://github.com/laurheth/goblinfriends3d">GitHub</a></p>
-
-                <div class="screenshots">
-                    <img src="http://placekitten.com/640/480" />
-                    <img src="http://placekitten.com/640/480" />
-                    <img src="http://placekitten.com/640/480" />
-                </div>
-
-                <p>
-                    A game about goblins in a deep and dark dungeon discovering
-                    the meaning of friendship. Written in C#, using Unity3D.
+        <div id="content">
+            <section>
+                <img id="selfPhoto" src="img/fishphoto.jpeg" />
+                <h2>Hi, I'm Lauren!</h2>
+                <p id="description">
+                    I'm a junior developer with an interest in game and web development.
+                    I'm a former researcher with a love of Astrophysics, but my true passion
+                    is coding solutions to new problems, and creating interesting or fun
+                    experiences.
                 </p>
-            </div> <!-- /project -->
-
-            <div class="project">
-                <h3>Zoe Kabloe and the Quest for Brunch</h3>
-                <p class="links">
-                    <a href="https://laurheth.itch.io/zoe-kabloe-and-the-quest-for-brunch">itch.io</a>
-                     - <a href="https://github.com/laurheth/ZoelDoe">GitHub</a></p>
-
-                <div class="screenshots">
-                    <img src="img/zoe1.png" />
-                    <img src="img/zoe2.png" />
-                    <img src="img/zoe3.png" />
-                </div>
-
-                <p>
-                    Made in two weeks for the Queerly Representing the Underrepresented game jam.
-                    It is a 3D puzzle platformer about saving your friends, combatting
-                    gentrification, and having a nice brunch. C#, Unity3D.
-                </p>
-            </div> <!-- /project -->
-        </section>
-        <section>
-            <h2>Tools/Skills</h2>
-            <div class="row">
-                <p>Bunch of fancy heckin tools</p>
-            </div>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-            <div id="contactform">
-                <form>
-                    <ul>
-                        <li>
-                            <input id="form_name" type="text" placeholder="Name" name="name"  required /><input id="form_email" type="text" placeholder="E-Mail" name="email"  required />
-                        </li>
-                        <li>
-                            <textarea id="form_message" name="message" id="formmessage" placeholder="Message" rows=10 ></textarea>
-                        </li>
-                        <li>
-                            <input id="form_submit" type="submit" value="Send" />
-                        </li>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <div class="filterbar">
+                    Filter by:
+                    <ul class="filterlist">
+                        <li class="filteritem all">Show All</li>
+                        <li class="filteritem Csharp">C#</li>
+                        <li class="filteritem unity">Unity3D</li>
+                        <li class="filteritem games">Games</li>
+                        <li class="filteritem friendship">Friendship</li>
+                        <li class="filteritem gay">Gay</li>
                     </ul>
-                </form>
-            </div>
-        </section>
-    </div>
+                </div>
+                <div class="project all Csharp unity games friendship">
+                    <h3>Goblin Friends 3D</h3>
+                    <p class="links"><a href="https://github.com/laurheth/goblinfriends3d">GitHub</a></p>
+                    <ul class="filterlist">
+                        <li class="filteritem Csharp">C#</li>
+                        <li class="filteritem unity">Unity3D</li>
+                        <li class="filteritem games">Games</li>
+                        <li class="filteritem friendship">Friendship</li>
+                    </ul>
+                    <div class="screenshots">
+                        <img src="http://placekitten.com/640/480" />
+                        <img src="http://placekitten.com/640/480" />
+                        <img src="http://placekitten.com/640/480" />
+                    </div>
+
+                    <p>
+                        A game about goblins in a deep and dark dungeon discovering
+                        the meaning of friendship. Written in C#, using Unity3D.
+                    </p>
+                </div> <!-- /project -->
+
+                <div class="project all Csharp unity games gay">
+                    <h3>Zoe Kabloe and the Quest for Brunch</h3>
+                    <p class="links">
+                        <a href="https://laurheth.itch.io/zoe-kabloe-and-the-quest-for-brunch">itch.io</a>
+                        - <a href="https://github.com/laurheth/ZoelDoe">GitHub</a>
+                    </p>
+                    <ul class="filterlist">
+                        <li class="filteritem Csharp">C#</li>
+                        <li class="filteritem unity">Unity3D</li>
+                        <li class="filteritem games">Games</li>
+                        <li class="filteritem gay">Gay</li>
+                    </ul>
+                    <div class="screenshots">
+                        <img src="img/zoe1.png" />
+                        <img src="img/zoe2.png" />
+                        <img src="img/zoe3.png" />
+                    </div>
+
+                    <p>
+                        Made in two weeks for the Queerly Representing the Underrepresented game jam.
+                        It is a 3D puzzle platformer about saving your friends, combatting
+                        gentrification, and having a nice brunch. C#, Unity3D.
+                    </p>
+                </div> <!-- /project -->
+            </section>
+            <!--<section>
+            <h2>Tools/Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>SQL</li>
+                <li>Python 3</li>
+                <li>C#</li>
+            </ul>
+        </section>-->
+            <section>
+                <h2>Contact Me</h2>
+                <div id="contactform">
+                    <form>
+                        <ul class="contact">
+                            <li class="contact">
+                                <input id="form_name" type="text" placeholder="Name" name="name" required /><input id="form_email"
+                                    type="text" placeholder="E-mail" name="email" required />
+                            </li>
+                            <li class="contact">
+                                <textarea id="form_message" name="message" id="formmessage" placeholder="Enter your message"
+                                    rows=10></textarea>
+                            </li>
+                            <li class="contact">
+                                <input id="form_submit" type="submit" value="Send" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+        </div>
     </div>
     <footer>
         <p>Bottom text</p>
