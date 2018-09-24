@@ -21,9 +21,5 @@ $(document).ready(function(){
 
             }
         }
-        //$("div.all").stop();
-        //$("div.all").slideUp("fast");
-        //$("div."+thisclass).stop();
-        //$("div."+thisclass).slideDown("fast");
     });
 });
