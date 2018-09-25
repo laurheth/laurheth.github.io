@@ -54,6 +54,7 @@ body {
     background-color: #000d1a;
     background: url(../img/bg2.jpg) repeat center top;
     background-size: contain;
+    background-attachment: fixed;
     overflow: auto;
 }
 
