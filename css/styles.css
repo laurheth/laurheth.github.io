@@ -72,7 +72,7 @@ header, footer {
     margin: 0;
     text-align: center;
     /*padding:1em;*/
-    vertical-align: center;
+    /*vertical-align: center;*/
     /*display: inline-block;*/
     /*color: snow;*/
     color: snow;
@@ -206,6 +206,7 @@ li.contact {
 
 #form_submit {
     align-self: center;
+    width:100%;
 }
 
 #form_message {
@@ -238,3 +239,59 @@ li.all {
     background-color: #4d034d;
     color:snow;
 }
+
+@media screen and (max-width: 1000px) {
+    #content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .screenshots > img {
+        width:50%;
+    }
+    .screenshots > img:last-child {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #content {
+        width: 100%;
+    }
+    section {
+        padding: 1em 0;
+    }
+    li.contact, input {
+        margin:0;
+        display:block;
+    }
+    input {
+        width: 100%;
+    }
+    #form_name, #form_email, #form_message, #form_submit {
+        padding:0.8em;
+        margin:0.8em 0;
+        border: 2px;
+        border-style: solid;
+        border-radius: 0.4em;
+    }
+    #contactform {
+        padding: 0 1em;
+    }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .screenshots > img {
+        display: none;
+    }
+
+    .screenshots > img:first-child {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+    }
+}
+
