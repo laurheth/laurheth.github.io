@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
     <title>Lauren Hetherington</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -57,16 +58,26 @@
                         <li class="filteritem games">Games</li>
                         <li class="filteritem wip">Work in progress</li>
                     </ul>
-                    <div class="screenshots">
-                        <img src="http://placekitten.com/640/480" />
-                        <img src="http://placekitten.com/640/480" />
-                        <img src="http://placekitten.com/640/480" />
-                    </div>
+                    <div class="row">
+                        
+                        <div class="textcolumn">
+                            <p>
+                                A game about 3D rendered ASCII goblins in a deep and dark procedurally generated 
+                                dungeon discovering the meaning of friendship, and sometimes getting
+                                eaten by giant spiders. Written in C#, using Unity3D.
+                            </p>
+                        </div>
 
-                    <p>
-                        A game about goblins in a deep and dark dungeon discovering
-                        the meaning of friendship. Written in C#, using Unity3D.
-                    </p>
+                        <div class="imagecolumn">
+                                <img src="img/goblins1.jpg">
+                        </div>
+                        
+                    </div>
+                    <!--<div class="screenshots">
+                        <img src="img/goblins1.jpg" />
+                        
+                        <img src="img/goblins3.jpg" />
+                    </div>-->
                 </div> <!-- /project -->
 
                 <div class="project all Csharp unity games jam">
@@ -191,11 +202,11 @@
             <section>
                 <h2>Contact Me</h2>
                 <div id="contactform">
-                    <form>
+                    <form action="https://formspree.io/laurheth@gmail.com" method="POST">
                         <ul class="contact">
                             <li class="contact">
                                 <input id="form_name" type="text" placeholder="Name" name="name" required /><input id="form_email"
-                                    type="text" placeholder="E-mail" name="email" required />
+                                    type="text" placeholder="E-mail" name="_replyto" required />
                             </li>
                             <li class="contact">
                                 <textarea id="form_message" name="message" id="formmessage" placeholder="Enter your message"
