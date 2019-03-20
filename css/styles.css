@@ -26,6 +26,7 @@ a:active {
 }
 
 p {
+    margin: auto;
     text-align: left;
     font-size: 1.2em;
 }
@@ -156,7 +157,7 @@ section {
 
 .imagecolumn {
     margin-left: auto;
-    padding: 0em;
+    padding: 0.5em 0em;
     /*width:50%;*/
     /*background-color: yellow;*/
     flex: 1;
